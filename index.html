@@ -1,114 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-
+    <title>Calculadora Online</title>
+    
+    
+        
     <style>
-      body {
-          font-family: Arial, sans-serif;
-          background-color: #02b3cf;
-          margin: 0;
-          padding: 0;
-      }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #02b3cf; /* Cor de fundo do body */
+            color: #ffffff; /* Cor do texto */
+            margin: 0;
+            padding: 0;
+        }
 
-      header {
-          background-color: #3a423a;
-          padding: 10px;
-          text-align: center;
-          width: 120%; /* Ocupar toda a largura disponível */
-          margin: auto; /* Centralizar horizontalmente */
-          display: flex; /* Centralizar verticalmente */
-          align-items: center; /* Centralizar verticalmente */
-      }
+        h1, p {
+            text-align: center;
+            max-width: 800px;
+        }
 
-      header h1 {
-          color: #fff;
-          margin: 0; /* Remover margem padrão do h1 */
-      }
+       
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #3a423a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
-      ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-      }
+        button:hover {
+            background-color: #6a92e1;
+        }
 
-      li {
-          margin: 20px;
-          width: 200px;
-          text-align: center;
-      }
+        .rodape {
+            color: #FFFFFF;
+            padding: 23px;
+            background-color: rgb(25, 33, 183);
+            text-align: center;
+            font-family: 'Franklin Gothic Medium';
+            font-weight: 400;
+            margin-top: 40px;
+            position: relative;
+            width: 100%;
+            height: 60px;
+            line-height: 40px;
+            display: flex;
+            justify-content: center; /* Centralizar horizontalmente */
+        }   
+        
+    </style>
 
-      a {
-          display: block;
-          padding: 15px 20px; 
-          margin: 5px; 
-          width: 80%;
-          height: 80%;
-          background-color: #3a423a;
-          color: #fff;
-          text-decoration: none;
-          border-radius: 5px;
-      }
 
-      a:hover {
-          background-color: #6a92e1;
-      }
-  </style>
 </head>
 <body>
+    <h1>Calculadora Online</h1>
+    <p>Bem-vindo ao "Calculadora Online"!
 
-    <header>
-        <h1>Calculadora Online</h1>
-        <a href="home.html">Home</a>
-    </header>
+        Estamos felizes em apresentar a você o nosso site "Calculadora Online" - sua ferramenta completa para resolver diversos cálculos e converter medidas, tudo em um só lugar!<br><br>
+        
+        Quando se trata de matemática, nosso site oferece uma ampla gama de funcionalidades para facilitar sua vida. Você pode explorar conceitos de potenciação, calcular a hipotenusa de um triângulo retângulo ou até mesmo resolver equações do segundo grau. Não importa o quão complexa seja a tarefa, nossa calculadora está aqui para ajudar.<br><br>
+        
+        Além disso, nossos recursos vão muito além da matemática. Se você precisa converter medidas de uma unidade para outra, nosso conversor de medidas estará pronto para simplificar esse processo.<br><br>
+        
+        A construção de uma piscina com uma forma diferente? Sem problemas! Use nossa calculadora para determinar o perímetro de uma piscina hexagonal, bem como a área do retângulo, círculo ou triângulo, independentemente das dimensões.<br><br>
+        
+        E não paramos por aí! Sabemos que a saúde é importante, por isso oferecemos a calculadora do IMC (Índice de Massa Corporal). Basta inserir seu peso e altura, e você obterá informações valiosas sobre seu peso corporal e saúde.<br><br>
+        
+        Se o assunto é desconto, você também está no lugar certo. Nosso site permite que você calcule descontos em produtos com facilidade e eficiência.<br><br>
+        
+        Se você gosta de aprender sobre matemática avançada, nossos recursos de cálculo de Delta e conversor de graus para radianos e vice-versa são ótimas ferramentas para se aprofundar no assunto.<br><br>
+        
+        E para os fãs de Pokémon, oferecemos um recurso exclusivo que permite comparar os atributos de ataque e defesa de diferentes Pokémon para que você possa tomar decisões estratégicas em suas batalhas.<br><br>
+        
+        Aqui, também abrimos espaço para a diversão e curiosidade com verificação de números múltiplos, pares e ímpares.<br><br>
+        
+        Nossa missão é fornecer uma plataforma completa e confiável para todas as suas necessidades de cálculo e conversão, e continuamos trabalhando para adicionar ainda mais recursos e funcionalidades no futuro.<br><br>
+        
+        Sinta-se à vontade para explorar e desfrutar de todas as ferramentas que oferecemos no "Calculadora Online". Estamos aqui para ajudar você a resolver problemas, economizar tempo e facilitar sua vida. Seja bem-vindo e aproveite ao máximo nossos recursos!<br><br>
+        
+        Atenciosamente,<br><br>
+        A equipe do "Calculadora Online"</p>
 
 
+    <script>
+       
+        function irParaOutraPagina() {
+            window.location.href = "index.html";
+        }
+    </script>
 
-    <ul>
+   
+    <button onclick="irParaOutraPagina()">Ir para Calculadoras</button>
 
-        <li><a href="funções/function1.html">Saudação</a></li>
-        <li><a href="variáveis/exercicio3.html">Trocar Valores</a></li>
-        <li><a href="processamentos/operadores2.html">Potenciação e módulo</a></li>
-        <li><a href="processamentos/operadores3.html">Conversor de Medidas</a></li>
-        <li><a href="processamentos/operadores5.html">Perímetro da Piscina</a></li>
-        <li><a href="processamentos/operadores6.html">Área do Retângulo</a></li>
-        <li><a href="processamentos/operadores7.html">Área do Círculo</a></li>
-        <li><a href="processamentos/operadores8.html">Área do Triângulo</a></li>
-        <li><a href="processamentos/operadores9.html">Cálculo do Desconto</a></li>
-        <li><a href="processamentos/operadores10.html">Cálculo da Hipotenusa</a></li>
-        <li><a href="processamentos/operadores11.html">Cálculo das Raízes de uma Equação do Segundo Grau</a></li>
-        <li><a href="processamentos/operadores12.html">Conversor de Graus para Radianos</a></li>
-        <li><a href="processamentos/operadores13.html">Conversor de Radianos para Graus</a></li>
-        <li><a href="processamentos/operadores14.html">Calculadora de Hipotenusa</a></li>
-        <li><a href="operadoreslógicos/opermat4.html">Comparação de Ataque e Defesa</a></li>
-        <li><a href="operadoreslógicos/opermat8.html">Verificação de Número Par e Ímpar</a></li>
-        <li><a href="operadoreslógicos/opermat9.html">Verificação de Nota</a></li>
-        <li><a href="operadoreslógicos/opermat12.html">Cálculo de Delta</a></li>
-        <li><a href="operadoreslógicos/opermat13.html">Cálculo de IMC</a></li>
-        <li><a href="decisão/decisão1.html">Verificação de Aprovação</a></li>
-        <li><a href="decisão/decisão2.html">Verificação de Múltiplo</a></li>
-        <li><a href="decisão/decisão3.html">Cálculo das Raízes</a></li>
-        <li><a href="repetição/repetição5.html">Soma de Números</a></li>
-        <li><a href="repetição/repetição7.html">Análise de Números</a></li>
-        <li><a href="exercícios/mix1.html">Cálculo de Salário</a></li>
-        <li><a href="exercícios/mix4.html">Área do Trapézio</a></li>
-        <li><a href="exercícios/mix5.html">Calculadora de Pagamento</a></li>
-        <li><a href="exercícios/mix7.html">Calculadora Aritmética</a></li>
-        <li><a href="exercícios/mix8.html">Quilometragem de Combustível</a></li>
-        <li><a href="exercícios/mix9.html">Calculadora de Limite de Crédito</a></li>
-        <li><a href="arrays/arrays6.html">Notas dos Alunos</a></li>
-        <li><a href="arrays/arrays7.html">Cálculo da Média das Notas</a></li>
-        <li><a href="arrays/arrays9.html">Soma de Vendas Mensais</a></li>
-        <li><a href="funções/function3.html">Multiplicação</a></li>
-        <li><a href="funções/function4.html">Verificar Par ou Ímpar</a></li>
-        <li><a href="funções/function5.html">Calculadora de Raízes</a></li>
-      
-    </ul>
-    
+    <footer class="rodape">
+        <p>Desenvolvido por Luan, Maria Luiza e Sara Esther 2023
+        <p>
+    </footer>
+
 </body>
 </html>
